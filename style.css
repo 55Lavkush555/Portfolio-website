@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nav {
+    width: 95vw;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+
+nav>ul>li {
+    list-style: none;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+nav>ul>li>a:hover {
+    color: rgb(235 38 38);
+}
+
+.about {
+    width: 100vw;
+    height: 70vh;
+}
+
+.about>div {
+    justify-content: space-between;
+}
+
+.hamburger {
+    display: none;
+}
+
+.left {
+    width: 60%;
+}
+
+.right {
+    width: 30%;
+}
+
+.right>img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.left>button {
+    border: none;
+    background-color: rgb(235 38 38);
+    color: white;
+    cursor: pointer;
+    width: 200px;
+    padding: 5px 0px;
+    border-radius: 20px;
+}
+
+.left>button:hover {
+    background-color: red;
+}
+
+.recent-post {
+    width: 100vw;
+    height: 400px;
+    background-color: rgb(196 253 234);
+}
+
+.recent-post>div {
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.post-card {
+    width: 400px;
+    background-color: white;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.work-card {
+    width: 80vw;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.work-card>img {
+    height: 160px;
+    width: 250px;
+}
+
+.info {
+    flex-direction: column;
+    height: 100%;
+    width: 65%;
+}
+
+.info>button {
+    background-color: rgb(235 38 38);
+    border: 1px solid black;
+    font-size: 20px;
+    width: 100px;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.info a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+footer>div {
+    flex-direction: column;
+}
+
+footer img {
+    height: 40px;
+    width: 200px;
+}
+
+@media (max-width: 1046px) {
+    .post-card {
+        width: 500px;
+    }
+
+    .recent-post {
+        height: 710px;
+    }
+}
+
+@media (max-width: 930px) {
+    .info {
+        width: 50%;
+    }
+
+    h3 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 639px) {
+    .about {
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .about>div {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80vw;
+    }
+
+    .right {
+        width: 98vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger>img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .work-card {
+        width: 100vw;
+        height: 350px;
+        justify-content: center;
+
+    }
+
+    .work-card img {
+        width: 320px;
+    }
+
+    .info {
+        width: 320px;
+        height: 160px;
+    }
+}
+
+.dropdown {
+    width: 99vw;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    margin-top: 3px;
+}
+
+.dropdown a:hover {
+    color: rgb(235 38 38);
+}
+
+
+@media (max-width: 450px) {
+    .left>h1 {
+        font-size: 25px;
+    }
+
+    .left {
+        width: 90vw;
+    }
+
+    .post-card {
+        width: 310px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .about {
+        height: auto;
+    }
+}

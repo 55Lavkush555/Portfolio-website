@@ -1,0 +1,43 @@
+.container {
+    width: 80vw;
+    margin: auto;
+}
+
+.mt-1 {
+    margin-top: 10%;
+}
+
+.mt-2 {
+    margin-top: 15px;
+}
+
+.mt-3 {
+    margin-top: 30px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contant-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.sp-bt {
+    justify-content: space-between;
+}
+
+.sp-ad {
+    justify-content: space-around;
+}
+
+@media (max-width: 930px) {
+    .container {
+        width: 98vw;
+    }
+}
